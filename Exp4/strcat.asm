@@ -108,8 +108,6 @@ strConcat proc
     ; 结尾加上 '$'
     mov byte ptr [di], '$'
 
-
-
     pop di
     pop si
     pop cx
