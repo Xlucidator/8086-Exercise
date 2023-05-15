@@ -55,7 +55,7 @@ MAIN            PROC        FAR
                 ADD         DX, CX
                 MOV         ANSWER+6, DX
 
-                ; 用十进制打印
+                ; 用十六进制打印
                 MOV         CX, 4
                 MOV         DI, OFFSET ANSWER+6
 LP1:            MOV         BX, [DI]
@@ -69,7 +69,7 @@ LP1:            MOV         BX, [DI]
                 MOV         AH, 09H
                 INT         21H
 
-                ; 用十六进制打印（内存中操作）
+                ; 用十进制打印（内存中操作）
                 MOV         DI, OFFSET DIVIDENT
                 MOV         SI, OFFSET ANSWER
                 MOV         CX, 4
